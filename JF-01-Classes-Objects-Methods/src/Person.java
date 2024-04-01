@@ -11,11 +11,34 @@ public class Person {
    //creating instance of a class Company and storing it into the variable company
     static private Company company = new Company();
     private NewsAgency agency;
+    private String middleName = "Maria";
 
-    public void myTestMethod(){
-        //var can be used only with local variables
-        var age = 21;
-         var name = "Jake";
+
+    //void doesn't return anything
+    public void sayHello() {
+        System.out.println("Hello");
+    }
+
+    //has 1 parameter
+    public void saySomething(String message) {
+        System.out.println(message);
+    }
+
+    public char getMiddleInitial(){
+        return middleName.charAt(0);
+    }
+
+    public int add(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    public static void main(String[] args) {
+        Person p1 = new Person();
+        p1.sayHello();
+        p1.saySomething("Hey what's up?");
+        System.out.println(p1.getMiddleInitial());
+        System.out.println(p1.add(2,5));
+
     }
 
 
