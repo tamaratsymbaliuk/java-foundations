@@ -12,8 +12,11 @@ public class Person {
     static private Company company = new Company();
     private NewsAgency agency;
 
-    public static void main(String[] args) {
-        System.out.println(company);
+    public void myTestMethod(){
+        //var can be used only with local variables
+        var age = 21;
+         var name = "Jake";
     }
+
 
 }
