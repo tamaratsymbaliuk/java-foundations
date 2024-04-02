@@ -32,12 +32,18 @@ public class Person {
         return num1 + num2;
     }
 
+    public void test(String... words){
+        //use varargs of type String... to set array parameter to any value
+    }
+
+
     public static void main(String[] args) {
         Person p1 = new Person();
         p1.sayHello();
         p1.saySomething("Hey what's up?");
         System.out.println(p1.getMiddleInitial());
         System.out.println(p1.add(2,5));
+        p1.test("one","two","three");
 
     }
 
