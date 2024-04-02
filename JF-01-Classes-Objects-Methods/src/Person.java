@@ -18,6 +18,10 @@ public class Person {
     public void sayHello() {
         System.out.println("Hello");
     }
+    //a static method belongs to the class rather than any instance of the class. You can call a static method without creating an instance of the class in which it's defined
+    public static void checkStatic(){
+        System.out.println("static");
+    }
 
     //has 1 parameter
     public void saySomething(String message) {
@@ -44,6 +48,7 @@ public class Person {
         System.out.println(p1.getMiddleInitial());
         System.out.println(p1.add(2,5));
         p1.test("one","two","three");
+        checkStatic();
 
     }
 
