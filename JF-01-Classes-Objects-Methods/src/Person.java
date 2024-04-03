@@ -1,8 +1,6 @@
 import business.Company;
 
 public class Person {
-    //constant variable uppercase
-    private final double PI = 3.14;
     private final String MY_BIG_CONSTANT ="My constant";
     private String firstName;
     private int age;
@@ -12,6 +10,28 @@ public class Person {
     static private Company company = new Company();
     private NewsAgency agency;
     private String middleName = "Maria";
+    //every instance of the Person class will share this static variable
+    public static double PI = 3.14;
+    public static int[]nums = initNums();
+
+
+    //static initializer
+    static {
+        nums = new int[5];
+        nums[0] = 3;
+        nums[1] = 3;
+        nums[2] = 3;
+    }
+ //second better option
+    public static int[] initNums(){
+        int[] nums = new int[5];
+        nums[0] = 3;
+        nums[1] = 3;
+        nums[2] = 3;
+        return nums;
+    }
+
+
 
 
     //void doesn't return anything
