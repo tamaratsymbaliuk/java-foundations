@@ -1,6 +1,7 @@
 import business.Company;
 
 public class Person {
+    //same as public class Person extends Object(parent for every class that doesn't have extends keyword)
     private final String MY_BIG_CONSTANT ="My constant";
     private String firstName;
     private int age;
