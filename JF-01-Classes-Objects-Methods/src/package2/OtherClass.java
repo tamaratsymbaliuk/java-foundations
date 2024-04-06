@@ -5,6 +5,7 @@ public class OtherClass {
         ClassB classB = new ClassB();
         classB.protectedMethod();
         classB.protectedMethod();
+        classB.publicMethod();
     }
 
 }
