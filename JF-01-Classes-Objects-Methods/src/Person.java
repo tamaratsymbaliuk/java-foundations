@@ -1,9 +1,13 @@
 import business.Company;
 
+import java.time.LocalDate;
+
 public class Person {
     //same as public class Person extends Object(parent for every class that doesn't have extends keyword)
     private final String MY_BIG_CONSTANT ="My constant";
     private String firstName;
+    private String lastName;
+    protected LocalDate dob;
     private int age;
     private long id;
     private char middleInitial;
@@ -70,6 +74,8 @@ public class Person {
         System.out.println(p1.add(2,5));
         p1.test("one","two","three");
         checkStatic();
+        p1.firstName ="Jake";
+        p1.lastName ="Smith";
 
     }
 
