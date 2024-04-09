@@ -9,6 +9,7 @@ public class NewsAgency {
     public void accessMethod(){
         Person person = new Person();
         person.dob = LocalDate.now();
+        person.saySomething("Hello");
     }
 
 
