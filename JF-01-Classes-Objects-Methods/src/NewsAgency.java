@@ -10,6 +10,7 @@ public class NewsAgency {
         Person person = new Person();
         person.dob = LocalDate.now();
         person.saySomething("Hello");
+        person.getMiddleInitial();
     }
 
 
