@@ -19,6 +19,18 @@ public class Person {
     public static double PI = 3.14;
     public static int[]nums = initNums();
 
+    //constructor
+    public Person(){
+    }
+    //constructors allow properties to be set when an object is created
+    public Person(String firstName, String lastName, LocalDate dob){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+    }
+
+
+
 
     //static initializer
     static {
