@@ -19,8 +19,8 @@ public class Person {
     public static double PI = 3.14;
     public static int[]nums = initNums();
 
-    //constructor
-    public Person(){
+    //constructor - if you don't create one, Java provides a default no org constr for each class
+    protected Person(){
     }
     //constructors allow properties to be set when an object is created
     public Person(String firstName, String lastName, LocalDate dob){
