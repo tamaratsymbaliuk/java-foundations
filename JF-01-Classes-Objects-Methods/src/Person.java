@@ -99,4 +99,12 @@ public class Person {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName.substring(0,1).toUpperCase() + lastName.substring(1);;
+    }
 }

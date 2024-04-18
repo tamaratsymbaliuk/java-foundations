@@ -16,8 +16,10 @@ public class NewsAgency {
     }
 
     public static void main(String[] args) {
-        Person tom = new Person("tom","Smith", LocalDate.of(2000,11,1));
+        Person tom = new Person("tom","smith", LocalDate.of(2000,11,1));
         System.out.format("The person's first name is: %s.", tom.getFirstName());
+        tom.setLastName("smith");
+        System.out.format("The person's last name is: %s.", tom.getLastName());
     }
 
 
