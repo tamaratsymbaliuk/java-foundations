@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JF-01-Classes-Objects-Methods/JF-01-Classes-Objects-Methods.iml" filepath="$PROJECT_DIR$/JF-01-Classes-Objects-Methods/JF-01-Classes-Objects-Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JF-02-WorkingWithText/JF-02-WorkingWithText.iml" filepath="$PROJECT_DIR$/JF-02-WorkingWithText/JF-02-WorkingWithText.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-fundamentals.iml" filepath="$PROJECT_DIR$/.idea/java-fundamentals.iml" />
     </modules>
   </component>
