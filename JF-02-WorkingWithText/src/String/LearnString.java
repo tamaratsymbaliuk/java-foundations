@@ -12,6 +12,12 @@ public class LearnString {
         System.out.println(fruit == anotherFruit);//True
         System.out.println(vegetable == anotherVegetable);//False
 
+        String myText = " ";
+        System.out.println(myText.isEmpty()); //false
+        System.out.println(myText.isBlank()); //true
+
+
+
 
     }
 
