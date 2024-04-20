@@ -16,6 +16,9 @@ public class LearnString {
         System.out.println(myText.isEmpty()); //false
         System.out.println(myText.isBlank()); //true
 
+        String replaceText = "Hello how are you?";
+        System.out.println(replaceText.replace('e','A'));
+
 
 
 
