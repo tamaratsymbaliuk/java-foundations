@@ -6,11 +6,8 @@ import java.io.IOException;
 
 public class ReadInputFile {
     public static void main(String[] args) {
-        // Example for a Windows system
-        String filePath = "C:\\Users\\YourUsername\\Documents\\input.txt";
 
-        // Example for a Unix-based system (macOS/Linux)
-        // String filePath = "/Users/YourUsername/Documents/input.txt";
+        String filePath = "/Users/tamaratsymbaliuk/Desktop/input.txt";
 
         readFile(filePath);
     }

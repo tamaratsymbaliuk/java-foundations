@@ -19,6 +19,14 @@ public class LearnString {
         String replaceText = "Hello how are you?";
         System.out.println(replaceText.replace('e','A'));
 
+        String firstName = " Jake ";
+        System.out.format("'%s'",firstName.stripLeading());
+        System.out.format("'%s'",firstName.stripTrailing());
+
+
+
+
+
 
 
 
