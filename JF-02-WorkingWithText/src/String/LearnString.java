@@ -27,8 +27,16 @@ public class LearnString {
         String anotherName = " Tom ";
         System.out.println(anotherName.trim()); //trim is used in older versions. better to use strip()
 
+        String fruits = "Apples";
+        System.out.println(fruits.charAt(3));
 
+        String firstWord = "Oranges";
+        String secondWord = "Banana";
 
+        System.out.println(firstWord.compareTo(secondWord));
+
+        String someText = "Four score and seven years ago";
+        System.out.println(someText.contains("our"));//true
 
 
 
