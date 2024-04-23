@@ -20,8 +20,12 @@ public class LearnString {
         System.out.println(replaceText.replace('e','A'));
 
         String firstName = " Jake ";
+        System.out.println(firstName.strip());
         System.out.format("'%s'",firstName.stripLeading());
         System.out.format("'%s'",firstName.stripTrailing());
+
+        String anotherName = " Tom ";
+        System.out.println(anotherName.trim()); //trim is used in older versions. better to use strip()
 
 
 
