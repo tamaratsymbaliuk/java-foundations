@@ -38,6 +38,24 @@ public class LearnString {
         String someText = "Four score and seven years ago";
         System.out.println(someText.contains("our"));//true
 
+        String text1 = "This is my text1";
+        String text2 = "This is my text2";
+        System.out.println(text1.concat(text2));
+
+
+        //StringBuilder - recommended. not thread safe
+        String finalString = new StringBuilder(text1.length()+text2.length()+1).append(text1).append(" ").append(text2).toString();
+        System.out.println(finalString);
+
+
+        //StringBuffer - thread safe, older version
+        String otherFinalString = new StringBuffer().append(text1).append(" ").append(text2).toString();
+        System.out.println(otherFinalString);
+
+        //another option
+        System.out.format("%s %s\n",text1,text2);
+
+
 
 
 
