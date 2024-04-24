@@ -61,6 +61,9 @@ public class LearnString {
         System.out.println(chars[2]);//u
         StringBuilder builder = new StringBuilder(text3.length());
 
+        String newText = text3.substring(0,10).toUpperCase();//10 is not included
+        System.out.println(newText);//FOUR SCORE
+
 
 
 
