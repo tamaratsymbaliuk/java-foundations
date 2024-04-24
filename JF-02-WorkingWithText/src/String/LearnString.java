@@ -55,6 +55,13 @@ public class LearnString {
         //another option
         System.out.format("%s %s\n",text1,text2);
 
+        String text3 = "Four score and seven years ago";
+        System.out.println(text3.length());
+        char[] chars = text3.toCharArray();
+        System.out.println(chars[2]);//u
+        StringBuilder builder = new StringBuilder(text3.length());
+
+
 
 
 
