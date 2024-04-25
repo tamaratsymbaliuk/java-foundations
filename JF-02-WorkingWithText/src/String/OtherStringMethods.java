@@ -14,6 +14,14 @@ public class OtherStringMethods {
         String[] fred = people[0].split(",");
         System.out.println(fred[3]);
 
+        String filename = "file001.txt";
+        System.out.println(filename.endsWith("txt"));
+        System.out.println(filename.strip().startsWith("file"));
+
+
+
+
+
 
     }
 }
