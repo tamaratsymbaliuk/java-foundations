@@ -64,6 +64,11 @@ public class LearnString {
         String newText = text3.substring(0,10).toUpperCase();//10 is not included
         System.out.println(newText);//FOUR SCORE
 
+        System.out.println(text3.indexOf("seven"));
+        String phoneNumber = "(312) 333-5551";
+        String areaCode = phoneNumber.substring(1,4);
+        System.out.println(areaCode);
+
 
 
 
