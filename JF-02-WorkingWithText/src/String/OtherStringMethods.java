@@ -1,5 +1,7 @@
 package String;
 
+import static java.lang.StringTemplate.STR;
+
 public class OtherStringMethods {
     public static void main(String[] args) {
 
@@ -23,6 +25,8 @@ public class OtherStringMethods {
 
         System.out.println(firstText.contentEquals(secondText));//can compare 2 different data types
         System.out.println(firstText.equals(secondText));//compares 2 strings
+
+        //System.out.println(STR."Hello my file is \{filename}");
 
 
 
