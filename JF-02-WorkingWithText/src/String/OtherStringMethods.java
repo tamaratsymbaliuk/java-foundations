@@ -18,6 +18,13 @@ public class OtherStringMethods {
         System.out.println(filename.endsWith("txt"));
         System.out.println(filename.strip().startsWith("file"));
 
+        String firstText = "Apple";
+        String secondText = "Apple";
+
+        System.out.println(firstText.contentEquals(secondText));//can compare 2 different data types
+        System.out.println(firstText.equals(secondText));//compares 2 strings
+
+
 
 
 
