@@ -20,7 +20,7 @@ public class RegexPractice {
 
         System.out.println(phoneNumber1.matches(regex));//still true
 
-        String regex1 = "((\\d{1,2})[-.,\\s]?)?((\\d{3})[-.,\\s]?)((\\d{3})[-.,\\s]?)(\\d{4})";
+        String regex1 = "(?:(?<countryCode>\\d{1,2})[-.,\\s]?)?(?:(?<areaCode>\\d{3})[-.,\\s]?)(?:(\\d{3})[-.,\\s]?)(\\d{4})";
 
 
         Pattern pat = Pattern.compile(regex1);
@@ -28,10 +28,10 @@ public class RegexPractice {
 
         if (mat.matches()) {
             System.out.format("Whole number: %s\n",mat.group(0)); //entire number 1.232.333.2365
-            System.out.format("Country code: %s\n", new Object[]{mat.group(2)}); //1
-            System.out.format("Area code: %s\n", mat.group(4)); //232
-            System.out.format("Exchange: %s\n", mat.group(6)); //333
-            System.out.format("Line number: %s\n",mat.group(7)); //2365
+            System.out.format("Country code: %s\n", mat.group("countryCode")); //1
+            System.out.format("Area code: %s\n", mat.group("areaCode")); //232
+            System.out.format("Exchange: %s\n", mat.group(3)); //333
+            System.out.format("Line number: %s\n",mat.group(4)); //2365
 
 
         }
