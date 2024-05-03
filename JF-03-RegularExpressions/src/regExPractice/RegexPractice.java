@@ -20,10 +20,16 @@ public class RegexPractice {
 
         System.out.println(phoneNumber1.matches(regex));//still true
 
-        String regex1 = "(?:(?<countryCode>\\d{1,2})[-.,\\s]?)?(?:(?<areaCode>\\d{3})[-.,\\s]?)(?:(\\d{3})[-.,\\s]?)(\\d{4})";
+        String regex1 = """
+                # This is my regex to parse the parts of a phone number
+                (?:(?<countryCode>\\d{1,2})[-.,\\s]?)? #Get's country code
+                (?:(?<areaCode>\\d{3})[-.,\\s]?) # Get's area code
+                (?:(\\d{3})[-.,\\s]?) # Get's exchange
+                (\\d{4}) # Get's line number
+                """;
 
 
-        Pattern pat = Pattern.compile(regex1);
+        Pattern pat = Pattern.compile(regex1, Pattern.COMMENTS);
         Matcher mat = pat.matcher(phoneNumber1);
 
         if (mat.matches()) {
