@@ -16,14 +16,14 @@ public class RegexPractice {
         System.out.println(phoneNumber.matches("\\d\\d\\d-\\d\\d\\d-\\d\\d\\d\\d"));
         //instead we can use quantifiers
         String regex = "\\d{3}[-\\s]*\\d{3,}[-\\s]*\\d{3,4}";
-        String phoneNumber1 = "1.232.333.2365";
+        String phoneNumber1 = "1.(232).333.2365";
 
         System.out.println(phoneNumber1.matches(regex));//still true
 
         String regex1 = """
                 # This is my regex to parse the parts of a phone number
                 (?:(?<countryCode>\\d{1,2})[-.,\\s]?)? #Get's country code
-                (?:(?<areaCode>\\d{3})[-.,\\s]?) # Get's area code
+                (?:\\(?(?<areaCode>\\d{3})\\)?[-.,\\s]?) # Get's area code
                 (?:(\\d{3})[-.,\\s]?) # Get's exchange
                 (\\d{4}) # Get's line number
                 """;
