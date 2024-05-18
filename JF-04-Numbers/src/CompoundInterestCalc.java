@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
@@ -20,7 +21,10 @@ public class CompoundInterestCalc {
     }
 
     public static void main(String[] args) throws ParseException {
+        DecimalFormat df = new DecimalFormat("$#,###.##;$(#)");
+        DecimalFormat pf = new DecimalFormat("#%");
         BigDecimal balance = CompoundInterestCalc.calculate("$10000.00","8%",10,"$1000");
-        System.out.println(moneyFormatter.format(balance));
+        System.out.println(df.format(balance));
+        System.out.println(pf.format(0.08)); //8%
     }
 }
