@@ -24,7 +24,8 @@ public class CompoundInterestCalc {
         DecimalFormat df = new DecimalFormat("$#,###.##;$(#)");
         DecimalFormat pf = new DecimalFormat("#%");
         BigDecimal balance = CompoundInterestCalc.calculate("$10000.00","8%",10,"$1000");
-        System.out.println(df.format(balance));
-        System.out.println(pf.format(0.08)); //8%
+       // System.out.println(df.format(balance));
+       // System.out.println(pf.format(0.08)); //8%
+        System.out.printf("%.2f%n", balance);
     }
 }
