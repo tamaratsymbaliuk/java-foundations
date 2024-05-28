@@ -10,5 +10,21 @@ public class GuessIt {
         } else {
             System.out.println("Sorry, you didn't get it. ");
         }
+
+//        switch (randomNum) {
+//            case 1:
+//                System.out.println("Color is red");
+//                break;
+//            case 2:
+//                System.out.println("The color is blue");
+//                break;
+//            case 3:
+//                System.out.println("The color is purple");
+//                break;
+//            default:
+//                System.out.println("The color is whatever");
+//        }
+
+
     }
 }
