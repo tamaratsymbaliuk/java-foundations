@@ -4,16 +4,18 @@ public class GuessIt {
     public static void main(String[] args) {
         int randomNum =  new Random().nextInt(10) + 1; //  1 - 10
         String guessedNumText = null;
-int wrongGuessCount = 0;
+int wrongGuessCount = 1;
    do {
             guessedNumText = System.console().readLine("Please guess a number between 1 and 10: ");
             if (guessedNumText.matches("-?\\d{1,2}")) {
                 int guessedNum = Integer.parseInt(guessedNumText);
 
                 if (guessedNum == randomNum) {
-                    System.out.printf("The random number was %d. You got it!%n", randomNum);
+                    String tryText = wrongGuessCount == 1 ? "try" : "tries";
+                    System.out.printf("The random number was %d. You got it in %d %s!%n", randomNum, wrongGuessCount, tryText);
                     return;
                 } else {
+                    wrongGuessCount++;
                     System.out.println("You didn't get it!");
                 }
             }
