@@ -1,6 +1,8 @@
 import java.util.Random;
 
 public class GuessIt {
+    private static final int MAX_ALLOWED_TRIES = 4;
+
     public static void main(String[] args) {
         int randomNum =  new Random().nextInt(10) + 1; //  1 - 10
         String guessedNumText = null;
@@ -15,11 +17,15 @@ int wrongGuessCount = 1;
                     System.out.printf("The random number was %d. You got it in %d %s!%n", randomNum, wrongGuessCount, tryText);
                     return;
                 } else {
-                    wrongGuessCount++;
                     System.out.println("You didn't get it!");
+                    wrongGuessCount++;
                 }
             }
-        }      while (!"quit".equals(guessedNumText));
+        } while (!"quit".equals(guessedNumText) && wrongGuessCount <= MAX_ALLOWED_TRIES);
+        if (wrongGuessCount >= MAX_ALLOWED_TRIES) {
+            System.out.printf("You've had %d incorrect guesses. The random number is %d. Ending program now.%n", wrongGuessCount-1, randomNum);
+
+        }
 
 
 //        System.out.printf("Generated number is: %d.%n", randomNum);
