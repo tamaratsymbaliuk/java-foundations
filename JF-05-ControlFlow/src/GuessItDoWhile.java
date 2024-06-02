@@ -6,7 +6,7 @@ public class GuessItDoWhile {
     public static void main(String[] args) {
         int randomNum =  new Random().nextInt(10) + 1; //  1 - 10
         String guessedNumText = null;
-int wrongGuessCount = 1;
+       int wrongGuessCount = 1;
    do {
             guessedNumText = System.console().readLine("Please guess a number between 1 and 10: ");
             if (guessedNumText.matches("-?\\d{1,2}")) {
