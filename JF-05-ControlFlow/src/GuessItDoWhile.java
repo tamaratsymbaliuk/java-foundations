@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class GuessIt {
+public class GuessItDoWhile {
     private static final int MAX_ALLOWED_TRIES = 4;
 
     public static void main(String[] args) {
