@@ -7,7 +7,7 @@ public class GuessItForLoop {
         int randomNum = new Random().nextInt(10) + 1; //  1 - 10
         String guessedNumText = null;
         int wrongGuessCount;
-     //   do {
+
         for (wrongGuessCount = 1; wrongGuessCount <= MAX_ALLOWED_TRIES; wrongGuessCount++) {
             guessedNumText = System.console().readLine("Please guess a number between 1 and 10: ");
             if (guessedNumText.matches("-?\\d{1,2}")) {
@@ -22,7 +22,7 @@ public class GuessItForLoop {
                 }
             }
         }
-        //     } while (!"quit".equals(guessedNumText) && wrongGuessCount <= MAX_ALLOWED_TRIES);
+
         if (wrongGuessCount >= MAX_ALLOWED_TRIES) {
             System.out.printf("You've had %d incorrect guesses. The random number is %d. Ending program now.%n", wrongGuessCount - 1, randomNum);
 
