@@ -24,6 +24,7 @@ public class GuessItForLoop {
         }
 
         if (wrongGuessCount >= MAX_ALLOWED_TRIES) {
+
             System.out.printf("You've had %d incorrect guesses. The random number is %d. Ending program now.%n", wrongGuessCount - 1, randomNum);
 
         }
