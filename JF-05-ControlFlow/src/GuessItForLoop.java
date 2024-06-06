@@ -16,7 +16,7 @@ public class GuessItForLoop {
                 if (guessedNum == randomNum) {
                     String tryText = wrongGuessCount == 1 ? "try" : "tries";
                     System.out.printf("The random number was %d. You got it in %d %s!%n", randomNum, wrongGuessCount, tryText);
-                    return;
+                    break;
                 } else {
                     System.out.println("You didn't get it!");
                 }
