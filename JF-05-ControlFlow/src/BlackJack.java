@@ -1,5 +1,6 @@
 public class BlackJack {
     public static void main(String[] args) {
+
         String card = "king";
         int currentTotalValue = 15;
 
