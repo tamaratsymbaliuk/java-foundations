@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/JF-03-RegularExpressions/JF-03-RegularExpressions.iml" filepath="$PROJECT_DIR$/JF-03-RegularExpressions/JF-03-RegularExpressions.iml" />
       <module fileurl="file://$PROJECT_DIR$/JF-04-Numbers/JF-04-Numbers.iml" filepath="$PROJECT_DIR$/JF-04-Numbers/JF-04-Numbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/JF-05-ControlFlow/JF-05-ControlFlow.iml" filepath="$PROJECT_DIR$/JF-05-ControlFlow/JF-05-ControlFlow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JF-06-More-OOP/JF-06-More-OOP.iml" filepath="$PROJECT_DIR$/JF-06-More-OOP/JF-06-More-OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-fundamentals.iml" filepath="$PROJECT_DIR$/.idea/java-fundamentals.iml" />
     </modules>
   </component>
