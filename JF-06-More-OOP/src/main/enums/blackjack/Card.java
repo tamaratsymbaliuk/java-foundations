@@ -30,4 +30,8 @@ public class Card {
         Card card2 = new Card(Suit.DIAMONDS, Rank.TEN);
 
     }
+
+    public int getValue() {
+        return this.rank.ordinal() + 1;
+    }
 }
