@@ -9,7 +9,8 @@ public class OptionalPractice {
 
         String msg2 = null;
         Optional<String> optMsg2 = Optional.ofNullable(msg2);
-        String finalOutput = optMsg2.orElse("alternative").toUpperCase();
+
+        String finalOutput = optMsg2.orElse("alternative");
         System.out.println(finalOutput);
     }
 }
