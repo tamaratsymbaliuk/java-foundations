@@ -2,6 +2,7 @@ package main.datastore;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Function;
 
 public class Repository<T extends Repository.IDable<V> & Repository.Saveable, V> {
@@ -21,8 +22,8 @@ public class Repository<T extends Repository.IDable<V> & Repository.Saveable, V>
         records.add(record);
         return record;
     }
-    T findById(long id) {
-        return records.stream().filter(p -> p.id().equals(id)).findFirst().orElseThrow();
+    Optional<T> findById(long id) {
+        return records.stream().filter(p -> p.id().equals(id)).findFirst();
     }
     static <T, V> V encrypt(T data, Function<T, V> func) {
         return func.apply(data);
@@ -41,7 +42,7 @@ public class Repository<T extends Repository.IDable<V> & Repository.Saveable, V>
         Repository<Person, Long> pRepo = new Repository<>();
         pRepo.save(new Person("Jake", "Pit", 23L));
 
-        Person foundPerson = pRepo.findById(23L);
+        Optional<Person> foundPerson = pRepo.findById(23L);
         System.out.println(foundPerson);
 
 
