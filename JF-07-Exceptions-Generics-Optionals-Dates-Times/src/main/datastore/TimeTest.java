@@ -28,7 +28,5 @@ public class TimeTest {
         System.out.println(zxmas.withZoneSameInstant(ZoneId.of("+0")));
 
         System.out.println(xmas.with(TemporalAdjusters.next(DayOfWeek.TUESDAY)));;
-
-
     }
 }
